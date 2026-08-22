@@ -184,19 +184,30 @@ export type Project = {
   technologies: string[];
   github: string | null;
   demo: string | null;
+  image: string | null;
 };
 
 // Projects are intentionally left as placeholders — fill these in as you
-// ship real work. Set `name`/`description`/`github`/`demo` to real values
-// and add technologies to replace each card's "coming soon" state.
+// ship real work. Set `name`/`description`/`github`/`demo`/`image` to real
+// values and add technologies to replace each card's "coming soon" state.
 export const projects: Project[] = [
   {
-    id: "project-one",
-    name: null,
-    description: null,
-    technologies: [],
-    github: null,
-    demo: null,
+    id: "spendwise-ai",
+    name: "SpendWise AI",
+    description:
+      "An AI-assisted personal expense tracker. Log expenses and income by chatting with an assistant that auto-fills merchants, creates budgets from plain-language requests, and refreshes spending insights automatically — plus a full dashboard with category breakdowns, trends, and anomaly detection.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "FastAPI",
+      "PostgreSQL",
+      "SQLAlchemy",
+    ],
+    github: "https://github.com/Thabiso343/SpendWise-AI",
+    demo: "https://spend-wise-ai-qno1.vercel.app/",
+    image: "/projects/spendwise-ai.png",
   },
   {
     id: "project-two",
@@ -205,6 +216,7 @@ export const projects: Project[] = [
     technologies: [],
     github: null,
     demo: null,
+    image: null,
   },
   {
     id: "project-three",
@@ -213,6 +225,7 @@ export const projects: Project[] = [
     technologies: [],
     github: null,
     demo: null,
+    image: null,
   },
 ];
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
@@ -17,8 +18,26 @@ export function Projects() {
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, i) => (
           <Reveal key={project.id} delay={(i % 3) * 0.08} className="h-full">
-            <article className="flex h-full flex-col overflow-hidden rounded-lg border border-dashed border-border-strong bg-surface transition-colors duration-300 hover:border-accent/60">
-              <ProjectCover index={i} />
+            <article
+              className={`flex h-full flex-col overflow-hidden rounded-lg border bg-surface transition-colors duration-300 ${
+                project.image
+                  ? "border-border-strong hover:border-accent/60"
+                  : "border-dashed border-border-strong hover:border-accent/60"
+              }`}
+            >
+              {project.image ? (
+                <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-border bg-background-soft">
+                  <Image
+                    src={project.image}
+                    alt={`${project.name ?? "Project"} screenshot`}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    className="object-cover object-top"
+                  />
+                </div>
+              ) : (
+                <ProjectCover index={i} />
+              )}
               <div className="flex flex-1 flex-col p-6">
                 <h3 className="text-lg font-semibold text-foreground">
                   {project.name ?? `Project ${i + 1}`}
