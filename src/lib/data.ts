@@ -209,14 +209,15 @@ export const projects: Project[] = [
     demo: "https://spend-wise-ai-qno1.vercel.app/",
     image: "/projects/spendwise-ai.png",
   },
-  {
-    id: "project-two",
-    name: null,
-    description: null,
-    technologies: [],
-    github: null,
-    demo: null,
-    image: null,
+    {
+    id: "recruitiq",
+    name: "RecruitIQ",
+    description:
+      "An explainable AI-powered resume screening and candidate ranking system for recruiters. Upload a job description and a batch of resumes (PDF, DOCX, or TXT) and it extracts skills, computes TF-IDF/cosine similarity against the role, and produces a transparent, weighted match score per candidate — plus a full recruiter dashboard with ranking tables, skill-gap analysis, and an in-app assistant that can run the screening and answer questions about the results.",
+    technologies: ["Python", "Streamlit", "scikit-learn", "Pandas", "Plotly", "pypdf"],
+    github: "https://github.com/Thabiso343/ATS-resume-screening-system",
+    demo: "https://ats-resume-screening-system-be4dxbhsayedrzsv6iurfz.streamlit.app/",
+    image: "/projects/recruitiq.png",
   },
   {
     id: "project-three",
