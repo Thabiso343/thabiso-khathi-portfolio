@@ -3,7 +3,12 @@
 Personal developer portfolio for Thabiso Khathi, Software Engineer & AI
 Enthusiast. Built with Next.js (App Router), TypeScript, Tailwind CSS v4,
 and Framer Motion.
+## 🚀 Live Demo
 
+[Try RecruitIQ live](https://ats-resume-screening-system-be4dxbhsayedrzsv6iurfz.streamlit.app/)
+
+> [!NOTE]
+> This app is hosted on Streamlit Community Cloud's free tier, which puts apps to sleep after a period of inactivity. If the demo shows a "Zzz..." screen or seems to hang on first load, click **"Yes, get this app back up!"** and wait 15–60 seconds for it to spin back up — it's not broken, just waking up.
 ## Getting started
 
 ```bash
