@@ -235,7 +235,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/Thabiso343/movie-database",
     demo: "https://movie-database-delta-pearl.vercel.app/",
-    image: null,
+    image: "/projects/movie-database.png",
   },
 ];
 
