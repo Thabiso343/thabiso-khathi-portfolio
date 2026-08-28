@@ -220,12 +220,21 @@ export const projects: Project[] = [
     image: "/projects/recruitiq.png",
   },
   {
-    id: "project-three",
-    name: null,
-    description: null,
-    technologies: [],
-    github: null,
-    demo: null,
+    id: "movie-database",
+    name: "Movie Database",
+    description:
+      "A full-stack movie discovery app powered by the TMDB API. Browse popular, top-rated, and upcoming movies, search in real time, and sign in with GitHub to build a personal watchlist, rate movies, and leave reviews — all backed by a PostgreSQL database with row-level authorization on every write.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Prisma",
+      "Auth.js",
+      "TMDB API",
+    ],
+    github: "https://github.com/Thabiso343/movie-database",
+    demo: "https://movie-database-delta-pearl.vercel.app/",
     image: null,
   },
 ];
